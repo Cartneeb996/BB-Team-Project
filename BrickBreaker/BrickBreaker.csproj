@@ -69,13 +69,29 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Paddle.cs" />
+    <Compile Include="PauseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PauseForm.Designer.cs">
+      <DependentUpon>PauseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\highscoreScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Screens\highscoreScreen.Designer.cs">
+      <DependentUpon>highscoreScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\PauseScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Screens\PauseScreen.Designer.cs">
       <DependentUpon>PauseScreen.cs</DependentUpon>
     </Compile>
-
     <Compile Include="PowerUps.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -91,27 +107,38 @@
     <Compile Include="Screens\GameScreen.Designer.cs">
       <DependentUpon>GameScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\TwoPlayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Screens\TwoPlayer.Designer.cs">
+      <DependentUpon>TwoPlayer.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PauseForm.resx">
+      <DependentUpon>PauseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\highscoreScreen.resx">
+      <DependentUpon>highscoreScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\PauseScreen.resx">
       <DependentUpon>PauseScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Screens\MenuScreen.resx">
       <DependentUpon>MenuScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\GameScreen.resx">
       <DependentUpon>GameScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\TwoPlayer.resx">
+      <DependentUpon>TwoPlayer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -138,28 +165,77 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <None Include="Resources\level5.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+
+    <Content Include="level1.xml" />
+    <None Include="Resources\LVL2Scratch.png" />
+    <None Include="Resources\LVL3Scratch.png" />
+    <None Include="Resources\MAINSCREEN2PLAYER.jpg" />
+
+    <None Include="Resources\powerups.zip" />
+
+    <None Include="Resources\SMALLBALL.png" />
+    <None Include="Resources\SMALLPADDLE2.png" />
+    <None Include="Resources\SMALLPADDLE.png" />
+    <None Include="Resources\SMALLBRICK2.png" />
+    <None Include="Resources\SMALLBRICK.png" />
+    <None Include="Resources\Background.jpg" />
+    <None Include="Resources\PauseScreen.jpg" />
+    <None Include="Resources\Paddle.png" />
+    <None Include="Resources\MainScreen.jpg" />
+    <None Include="Resources\BrickLvl3.png" />
+    <None Include="Resources\BrickLvl2.png" />
+    <None Include="Resources\BrickLvl1.png" />
+    <None Include="Resources\ball.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="level1.xml">
+
+    <None Include="Resources\Desert.wav" />
+    <None Include="Resources\elmobo - Pac in Time OST %28DOS AdLib%29 - 01 Desert.mp3" />
+
+    <None Include="Resources\enlargedBoi.png" />
+    <None Include="Resources\fastBoi.png" />
+
+    <Content Include="Resources\level5.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="level2.xml">
+    <Content Include="Resources\level1.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="level4.xml">
+    <Content Include="Resources\level2.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resources\level4.xml">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="level6.xml">
+    <Content Include="Resources\level6.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\level7.xml" />
+
+    <None Include="Resources\MenuScreenWhighscore.jpg" />
+
+    <None Include="Resources\lifeBoi.png" />
+    <None Include="Resources\multiBoi.png" />
+    <None Include="Resources\slowBoi.png" />
+    <None Include="Resources\twoplayerlevel1.xml"/>
+    <Content Include="Resources\smallBoi.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\scores.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\scores.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
